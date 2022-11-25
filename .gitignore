@@ -1,0 +1,4 @@
+/bot/node_modules
+/bot/Config.json
+/server/.env
+/server/node_modules

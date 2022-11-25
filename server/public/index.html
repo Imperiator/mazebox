@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta og images -->
+    <meta
+      property="og:image"
+      content="https://mazebox.tk/images/logo_eiffel_team.png"
+    />
+    <meta
+      name="description"
+      content="Site de mazebox, un projet Eiffel Team, venez rejoindre la communauté et tester notre jeu en relation avec le projet scientifique de la FLL 2022"
+    />
+    <!-- logo -->
+    <link rel="shortcut icon" href="/images/logo_eiffel_team.png" />
+    <link rel="icon" href="/images/logo_eiffel_team.png" type="image/png" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C5VMWLMBSR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-C5VMWLMBSR");
+    </script>
+
+    <title>MazeBox</title>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header class="nav">
+      <div class="nav_logo">
+        <img
+          class="logo"
+          src="/images/mazebox_text_nobg.png"
+          alt="mazebox logo text"
+        />
+      </div>
+      <div class="toggle" onclick="toggleMenu()">
+        <div class="menu">
+          <ul>
+            <li class="menu_items" id="home">
+              <a id="home" href="#home">Home</a>
+            </li>
+            <li class="menu_items" id="download">
+              <a id="download" href="#download">Download</a>
+            </li>
+            <li class="menu_items" id="project">
+              <a id="project" href="#project">Project</a>
+            </li>
+            <li class="menu_items">
+              <a href="https://discord.com/invite/atSprEFfFn">Community</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <div class="container">
+        <div class="high_score">
+          <div class="first">
+            <h1 class="winner">
+              Best Hight Score: <br />
+              <!-- <img src="/images/crown.png" alt="" class="crown"> -->
+              <span class="best_player">Loading Player</span> <br /><span
+                class="best_score"
+                >Loading Score</span
+              >
+            </h1>
+          </div>
+        </div>
+        <div class="second">
+          <h2>
+            2nd Place
+            <br />
+            <span class="second_player">Loading Player</span>
+            <br />
+            <span class="second_score">Loading Score</span>
+          </h2>
+        </div>
+        <div class="third">
+          <h2>
+            3rd Place
+            <br />
+            <span class="third_player">Loading Player</span>
+            <br />
+            <span class="third_score">Loading Score</span>
+          </h2>
+        </div>
+        <!-- <img class="logo_full" src="/images/logo_mazer.png" alt="" /> -->
+        <div class="allscores">
+          <p class="allscores-title">All Scores: Map 1</p>
+          <table>
+            <thead>
+              <th>Position</th>
+              <th>Pseudo</th>
+              <th>Score</th>
+            </thead>
+            <tbody class="score-table-1"></tbody>
+          </table>
+
+          <p class="allscores-title">All Scores: Map 2</p>
+
+          <table>
+            <thead>
+              <th>Position</th>
+              <th>Pseudo</th>
+              <th>Score</th>
+            </thead>
+            <tbody class="score-table-2"></tbody>
+          </table>
+
+          <p class="allscores-title">All Scores: Map 3</p>
+
+          <table>
+            <thead>
+              <th>Position</th>
+              <th>Pseudo</th>
+              <th>Score</th>
+            </thead>
+            <tbody class="score-table-3"></tbody>
+          </table>
+        </div>
+        <div class="discord_link">
+          <h2>Join our community:</h2>
+          <iframe
+            src="https://discord.com/widget?id=951398298328117318&theme=dark"
+            class="discord"
+            allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="download">
+      <div class="container dl_container">
+        <h2 class="download-text">Download Game</h2>
+        <table class="download-table">
+          <thead>
+            <th>Platform</th>
+            <th>Download</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pc (Windows, MAC, Linux)</td>
+              <td>
+                <a
+                  class="dl"
+                  href="https://img.imperiator.tk/MazeBox_latest.zip"
+                  target="_blank"
+                >
+                  Download For PC
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td>
+                <a
+                  class="dl"
+                  href="https://img.imperiator.tk/MazeBoxMobile.apk"
+                  target="_blank"
+                >
+                  Download For Android
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>iOS</td>
+              <td>
+                <a
+                  class="dl"
+                  href="https://img.imperiator.tk/Mazebox_ios_latest.zip"
+                  target="_blank"
+                >
+                  Download For iOS
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Cheat for all platform</td>
+              <td>
+                <a
+                  class="dl"
+                  class="dl"
+                  href="https://youtu.be/dQw4w9WgXcQ"
+                  target="_blank"
+                >
+                  Download Cheat
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="dl_video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/XiS-PVvzbZk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="changelog">
+          <div class="change_title">
+            <p>ChangeLogs: 01/04/22</p>
+          </div>
+          <ul>
+            <li>Added new map</li>
+            <li>Changed language to English</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <!-- <embed src="/images/présentetion jeux.pdf" width=100% height=100% type="application/pdf"> -->
+      <img src="/images/project_1.jpg" alt="project présentetion" />
+      <img src="/images/project_2.jpg" alt="project présentetion" />
+      <img src="/images/project_3.jpg" alt="project présentetion" />
+
+    </section>
+  </body>
+  <footer>
+    <div class="footer">
+      <div class="footer_text">
+        <p>
+          MazeBox is a game made by Eiffel Team.
+          <a href="https://discord.gg/atSprEFfFn"
+            >Join our community <b>BY CLICKING HERE</b></a
+          >
+        </p>
+      </div>
+      <div class="footer_logo">
+        <img
+          class="logo_footer"
+          src="/images/LogoEiffelTeamV2.jpg"
+          alt="mazebox logo text"
+        />
+      </div>
+    </div>
+  </footer>
+  <script src="/javascripts/index.js" defer></script>
+</html>

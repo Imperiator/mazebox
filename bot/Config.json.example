@@ -1,0 +1,6 @@
+module.exports = {
+    prefix: ["!"],
+    developers: ["id"]
+    token: "bot_token",
+    mongoose: "mongo_url"
+}
